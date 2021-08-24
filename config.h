@@ -1,0 +1,9 @@
+#define DARK_ENABLE 1
+#define DARK_IMAGE_COUNT 3
+#define DARK_EXPOSURE 10 
+#define DARK_INTERVAL 10
+
+#define BIAS_ENABLE 1
+#define BIAS_IMAGE_COUNT 6
+#define BIAS_EXPOSURE 2 
+#define BIAS_INTERVAL 2
