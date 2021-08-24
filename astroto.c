@@ -41,6 +41,9 @@ main() {
         exit(1);
     }
 
+    /* Set other params for the camera upfront or during sequence */
+    retval = set_config_value_string(camera, "iso", "400", context);
+
     /* Main Execution */
     for (i=0; i<2; i++) 
     {

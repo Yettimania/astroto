@@ -1,6 +1,6 @@
 #define DARK_ENABLE 1
 #define DARK_IMAGE_COUNT 3
-#define DARK_EXPOSURE 10 
+#define DARK_EXPOSURE 5 
 #define DARK_INTERVAL 10
 
 #define BIAS_ENABLE 1

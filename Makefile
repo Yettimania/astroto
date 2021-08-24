@@ -1,6 +1,6 @@
 CC = gcc
 
-SRC = astroto.c capture.c
+SRC = astroto.c capture.c config.c
 OBJ = $(SRC:.c=.o)
 
 LIBS = -lgphoto2

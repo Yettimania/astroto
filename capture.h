@@ -14,6 +14,8 @@ typedef struct Sequence {
 } Sequence;
 
 int capture_and_download(Camera *camera, int exposure, int interval, GPContext *context);
+int set_config_value_string(Camera *camera, const char *key, const char *val, GPContext *context);
+int get_config_value_string (Camera *camera, const char *key, char **str, GPContext *context);
 
 #if !defined (O_BINARY)
 	/*To have portable binary open() on *nix and on Windows */
