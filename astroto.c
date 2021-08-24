@@ -15,11 +15,13 @@ main() {
 
     struct Sequence sequences[2];
 
+    /* Dark Frames */
     sequences[0].enable = DARK_ENABLE;
     sequences[0].image_count = DARK_IMAGE_COUNT;
     sequences[0].exposure = DARK_EXPOSURE;
     sequences[0].interval = DARK_INTERVAL;
 
+    /* Bias Frames */
     sequences[1].enable = BIAS_ENABLE;
     sequences[1].image_count = BIAS_IMAGE_COUNT;
     sequences[1].exposure = BIAS_EXPOSURE;
@@ -44,6 +46,16 @@ main() {
     {
         if (sequences[i].enable)
         {
+
+            if (i == 0) {
+                printf("Beginning Dark Sequence...\n");
+            } else if (i == 1) {
+                printf("Beginning Bias Sequence...\n");
+            }
+            printf("Confirm camera is set to MANUAL with cap on or off.\n");
+            printf("Press Enter to Continue");
+            while( getchar() != '\n' );
+
             printf("Sequence: %d\n", i+1);
             for (z=0; z<sequences[i].image_count; z++)
             {
